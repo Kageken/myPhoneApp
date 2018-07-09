@@ -28,6 +28,9 @@
                                                 <rect key="frame" x="16" y="7" width="83" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="tappedHeaderPrevButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tra-ur-nPl"/>
+                                                </connections>
                                             </button>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" style="plain" id="hGu-vV-rfR">
@@ -35,6 +38,9 @@
                                                 <rect key="frame" x="276" y="7" width="83" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="tappedHeaderNextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x9s-pg-Ovg"/>
+                                                </connections>
                                             </button>
                                         </barButtonItem>
                                     </navigationItem>
@@ -65,6 +71,12 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="calendarCollectionView" destination="6Iq-q1-AWr" id="1yn-uQ-GQ7"/>
+                        <outlet property="headarPrevButton" destination="kjr-zb-tq4" id="zYt-dE-POU"/>
+                        <outlet property="headerNextButton" destination="PZX-hU-BdS" id="If0-cc-qTN"/>
+                        <outlet property="headerTitle" destination="s0O-hb-dUE" id="7Ov-1y-5ZY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
