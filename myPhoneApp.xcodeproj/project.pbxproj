@@ -14,6 +14,8 @@
 		FBBEF26020F33977007C199F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBBEF25E20F33977007C199F /* LaunchScreen.storyboard */; };
 		FBBEF26B20F33977007C199F /* myPhoneAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBEF26A20F33977007C199F /* myPhoneAppTests.swift */; };
 		FBBEF27620F33977007C199F /* myPhoneAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBEF27520F33977007C199F /* myPhoneAppUITests.swift */; };
+		FBBEF28420F33F29007C199F /* DateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBEF28320F33F29007C199F /* DateManager.swift */; };
+		FBBEF28620F33F5E007C199F /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBEF28520F33F5E007C199F /* CalendarCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		FBBEF27120F33977007C199F /* myPhoneAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myPhoneAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBBEF27520F33977007C199F /* myPhoneAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myPhoneAppUITests.swift; sourceTree = "<group>"; };
 		FBBEF27720F33977007C199F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBBEF28320F33F29007C199F /* DateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateManager.swift; sourceTree = "<group>"; };
+		FBBEF28520F33F5E007C199F /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 			children = (
 				FBBEF25520F33975007C199F /* AppDelegate.swift */,
 				FBBEF25720F33975007C199F /* ViewController.swift */,
+				FBBEF28320F33F29007C199F /* DateManager.swift */,
+				FBBEF28520F33F5E007C199F /* CalendarCell.swift */,
 				FBBEF25920F33975007C199F /* Main.storyboard */,
 				FBBEF25C20F33977007C199F /* Assets.xcassets */,
 				FBBEF25E20F33977007C199F /* LaunchScreen.storyboard */,
@@ -257,7 +263,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBBEF25820F33975007C199F /* ViewController.swift in Sources */,
+				FBBEF28420F33F29007C199F /* DateManager.swift in Sources */,
 				FBBEF25620F33975007C199F /* AppDelegate.swift in Sources */,
+				FBBEF28620F33F5E007C199F /* CalendarCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
