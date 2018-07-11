@@ -59,6 +59,21 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CalendarCell
+        
+        if ( indexPath.row % 7 == 0 ) {
+            cell.textLabel.textColor = UIColor.lightRed()
+        } else if ( indexPath.row % 7 == 6 ) {
+            cell.textLabel.textColor = UIColor.lightBlue()
+        } else {
+            cell.textLabel.textColor = UIColor.gray
+        }
+        
+        if ( indexPath.section == 0 ) {
+            cell.textLabel.text = weekArray[indexPath.row]
+        } else {
+            cell.textLabel.text = dateManager.conversionDateFormat(indexPath)
+        }
+        
         return cell
     }
 
