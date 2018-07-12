@@ -38,4 +38,11 @@ class DateManager: NSObject {
             currentMonthOfDates.append(date!)
         }
     }
+    
+    func conversionDateFormat(indexPath: IndexPath) -> String {
+        dateForCellAtIndexPath(numberOfItems: numberOfItems)
+        let formatter: DateFormatter = DateFormatter()
+        formatter.dateFormat = "d"
+        return formatter.string(from: currentMonthOfDates[indexPath.row])
+    }
 }
